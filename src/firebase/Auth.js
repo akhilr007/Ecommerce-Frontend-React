@@ -12,23 +12,15 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { createContext, useContext, useEffect, useState } from "react";
-import {
-  FIREBASE_API_KEY,
-  FIREBASE_AUTH_DOMAIN,
-  FIREBASE_PROJECT_ID,
-  FIREBASE_STORAGE_BUCKET,
-  FIREBASE_MESSAGING_SENDER_ID,
-  FIREBASE_APP_ID,
-} from "../secretKeys";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: FIREBASE_API_KEY,
-  authDomain: FIREBASE_AUTH_DOMAIN,
-  projectId: FIREBASE_PROJECT_ID,
-  storageBucket: FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
-  appId: FIREBASE_APP_ID,
+  apiKey: "AIzaSyDcoGjjHl3VDXmjdSru47BbLKRgEjHEyzQ",
+  authDomain: "e-commerce-project-effc6.firebaseapp.com",
+  projectId: "e-commerce-project-effc6",
+  storageBucket: "e-commerce-project-effc6.appspot.com",
+  messagingSenderId: "982242263265",
+  appId: "1:982242263265:web:1a100d47cf7b88ff00b7a0",
 };
 
 // Initialize Firebase

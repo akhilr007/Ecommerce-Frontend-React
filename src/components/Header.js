@@ -247,7 +247,7 @@ const Header = () => {
             <StyledLink to="/"> BingeKart </StyledLink>
           </Typography>
           <SearchBar />
-          <Box flexBasis={500} sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ display: { xs: "flex" } }}>
             <IconButton
               onClick={navigateToCart}
               size="large"
@@ -263,7 +263,9 @@ const Header = () => {
                 Hello, {user?.displayName ?? user.email}
               </Button>
             ) : (
-              <Button color="inherit">Login</Button>
+              <Button onClick={() => navigate("/login")} color="inherit">
+                Login
+              </Button>
             )}
           </Box>
         </Toolbar>
