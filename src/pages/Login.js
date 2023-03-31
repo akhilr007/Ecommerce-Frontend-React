@@ -2,7 +2,6 @@ import {
   Avatar,
   Box,
   Grid,
-  Link,
   Button,
   Container,
   CssBaseline,
@@ -14,6 +13,7 @@ import React from "react";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { useAuth } from "../firebase/Auth.js";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const theme = useTheme();
@@ -92,9 +92,7 @@ const Login = () => {
         </form>
         <Grid container justifyContent={"flex-end"}>
           <Grid item>
-            <Link variant="body2" href="/register">
-              New User? Sign Up
-            </Link>
+            <Link to="/register">New User? Sign Up</Link>
           </Grid>
         </Grid>
       </Box>
